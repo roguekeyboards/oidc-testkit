@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.3](https://github.com/rogueserenity/oidc-testkit/compare/v1.0.2...v1.0.3) (2026-10-18)
+
+
+### Bug Fixes
+
+* backdate default iat by skewLeeway to absorb clock skew ([#37](https://github.com/rogueserenity/oidc-testkit/issues/37)) ([e47ed73](https://github.com/rogueserenity/oidc-testkit/commit/e47ed73300547b9149c49781ac8ffe335b614abf))
+* **deps:** update module github.com/go-jose/go-jose/v4 to v4.1.6 ([#33](https://github.com/rogueserenity/oidc-testkit/issues/33)) ([144ec60](https://github.com/rogueserenity/oidc-testkit/commit/144ec608e2a0c0dc4200e59e1d702368fd3dfbda))
+
 ## [1.0.2](https://github.com/rogueserenity/oidc-testkit/compare/v1.0.1...v1.0.2) (2026-10-12)
 
 
