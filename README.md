@@ -85,9 +85,10 @@ func (s *Signer) Sign(opts ...SignOption) (token, subject string, err error)
 A `Signer` holds no mutable state and RSA signing is goroutine-safe: build one
 per process, share it across every spec. With no options, `Sign` issues a token
 with a **fresh random subject** (`"oidctest-"` + 32 hex chars), `aud` = the
-Signer's audience, `iss` = the Signer's issuer, `iat`/`nbf` = now, `exp` = now +
-1h, `alg` = RS256, `kid` = the Signer's key id. It returns the compact JWT and
-the subject it used, so a spec can seed and assert data owned by that subject.
+Signer's audience, `iss` = the Signer's issuer, `iat`/`nbf` = now − 30s (to
+absorb clock skew against the verifier), `exp` = now + 1h, `alg` = RS256, `kid`
+= the Signer's key id. It returns the compact JWT and the subject it used, so a
+spec can seed and assert data owned by that subject.
 
 ```go
 func WithSubject(sub string) SignOption            // pin sub instead of random

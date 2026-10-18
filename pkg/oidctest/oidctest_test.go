@@ -137,6 +137,34 @@ func TestSignRandomSubject(t *testing.T) {
 	}
 }
 
+func TestSignBackdatesIatAndNbf(t *testing.T) {
+	t.Parallel()
+	h := newHarness(t)
+
+	token, _, err := h.signer.Sign()
+	if err != nil {
+		t.Fatalf("Sign: %v", err)
+	}
+	idt, err := h.verify(t, token)
+	if err != nil {
+		t.Fatalf("verify: %v", err)
+	}
+	var claims struct {
+		NotBefore int64 `json:"nbf"`
+	}
+	if err := idt.Claims(&claims); err != nil {
+		t.Fatalf("Claims: %v", err)
+	}
+
+	cutoff := time.Now().Add(-20 * time.Second)
+	if !idt.IssuedAt.Before(cutoff) {
+		t.Fatalf("iat %v is not backdated", idt.IssuedAt)
+	}
+	if !time.Unix(claims.NotBefore, 0).Before(cutoff) {
+		t.Fatalf("nbf %v is not backdated", time.Unix(claims.NotBefore, 0))
+	}
+}
+
 func TestSignOptions(t *testing.T) {
 	t.Parallel()
 	h := newHarness(t)
