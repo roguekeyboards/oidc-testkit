@@ -16,7 +16,7 @@ import (
 
 	"github.com/alecthomas/kong"
 
-	"github.com/rogueserenity/oidc-testkit/internal/gen"
+	"github.com/roguekeyboards/oidc-testkit/internal/gen"
 )
 
 // cli is the flag surface. All four flags are required; there are no positional
