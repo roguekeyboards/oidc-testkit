@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/roguekeyboards/oidc-testkit/compare/v1.0.3...v1.0.4) (2026-10-30)
+
+
+### Bug Fixes
+
+* move the module to github.com/roguekeyboards/oidc-testkit ([#48](https://github.com/roguekeyboards/oidc-testkit/issues/48)) ([5760323](https://github.com/roguekeyboards/oidc-testkit/commit/5760323a6ab4b1c1d0a897a56be9a19cf7e207f3))
+
 ## [1.0.3](https://github.com/rogueserenity/oidc-testkit/compare/v1.0.2...v1.0.3) (2026-10-18)
 
 
