@@ -15,8 +15,8 @@ import (
 	"github.com/coreos/go-oidc/v3/oidc"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/rogueserenity/oidc-testkit/internal/gen"
-	"github.com/rogueserenity/oidc-testkit/pkg/oidctest"
+	"github.com/roguekeyboards/oidc-testkit/internal/gen"
+	"github.com/roguekeyboards/oidc-testkit/pkg/oidctest"
 )
 
 const testAudience = "urn:oidctest:api"

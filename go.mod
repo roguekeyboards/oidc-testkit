@@ -1,4 +1,4 @@
-module github.com/rogueserenity/oidc-testkit
+module github.com/roguekeyboards/oidc-testkit
 
 go 1.26.0
 

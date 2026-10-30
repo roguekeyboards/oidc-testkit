@@ -11,10 +11,10 @@ server**, so the suite parallelizes freely. A run mints hundreds of tokens; each
 RS256 signature is well under a millisecond.
 
 ```
-go get github.com/rogueserenity/oidc-testkit/pkg/oidctest
+go get github.com/roguekeyboards/oidc-testkit/pkg/oidctest
 ```
 
-Module `github.com/rogueserenity/oidc-testkit`, Go 1.26+. Layout follows
+Module `github.com/roguekeyboards/oidc-testkit`, Go 1.26+. Layout follows
 [golang-standards/project-layout](https://github.com/golang-standards/project-layout):
 
 ```
@@ -189,7 +189,7 @@ Writes exactly three files:
 errors — goes to stderr. Non-zero exit on any failure.
 
 ```bash
-ISSUER=$(go run github.com/rogueserenity/oidc-testkit/cmd/oidc-testkit-gen@vX.Y.Z \
+ISSUER=$(go run github.com/roguekeyboards/oidc-testkit/cmd/oidc-testkit-gen@vX.Y.Z \
   --issuer "https://my-bucket.s3.us-east-2.amazonaws.com/jwks/pr-123" \
   --out-dir ./oidc --key-out ./oidc/signing-key.pem)
 aws s3 cp ./oidc/jwks.json            "s3://my-bucket/jwks/pr-123/jwks.json"
@@ -239,8 +239,8 @@ types) the patch, and `feat!:` / `BREAKING CHANGE:` the major. The first
 release was `v1.0.0`.
 
 Consumers use a tagged version as a normal module dependency
-(`require github.com/rogueserenity/oidc-testkit vX.Y.Z`) and run the CLI with
-`go run github.com/rogueserenity/oidc-testkit/cmd/oidc-testkit-gen@vX.Y.Z` or a
+(`require github.com/roguekeyboards/oidc-testkit vX.Y.Z`) and run the CLI with
+`go run github.com/roguekeyboards/oidc-testkit/cmd/oidc-testkit-gen@vX.Y.Z` or a
 `go.mod` `tool` directive. No prebuilt binaries are published; add a binary
 workflow only if a `ubi:`-style install path is later chosen.
 

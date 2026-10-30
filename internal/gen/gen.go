@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/rogueserenity/oidc-testkit/pkg/oidctest"
+	"github.com/roguekeyboards/oidc-testkit/pkg/oidctest"
 )
 
 // keyBits is the RSA modulus size for generated signing keys. Fixed at 2048:

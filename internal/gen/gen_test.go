@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/rogueserenity/oidc-testkit/internal/gen"
-	"github.com/rogueserenity/oidc-testkit/pkg/oidctest"
+	"github.com/roguekeyboards/oidc-testkit/internal/gen"
+	"github.com/roguekeyboards/oidc-testkit/pkg/oidctest"
 )
 
 func TestGenerateAndMarshalKeyRoundTrip(t *testing.T) {
