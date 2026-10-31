@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/roguekeyboards/oidc-testkit/compare/v1.0.4...v1.0.5) (2026-10-31)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/go-jose/go-jose/v4 to v4.1.7 ([#51](https://github.com/roguekeyboards/oidc-testkit/issues/51)) ([3ef8617](https://github.com/roguekeyboards/oidc-testkit/commit/3ef861774fa2a63d869e2ec2f547a85fed321673))
+
 ## [1.0.4](https://github.com/roguekeyboards/oidc-testkit/compare/v1.0.3...v1.0.4) (2026-10-30)
 
 
