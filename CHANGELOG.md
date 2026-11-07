@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.6](https://github.com/roguekeyboards/oidc-testkit/compare/v1.0.5...v1.0.6) (2026-11-07)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/alecthomas/kong to v1.17.0 ([#55](https://github.com/roguekeyboards/oidc-testkit/issues/55)) ([374dadb](https://github.com/roguekeyboards/oidc-testkit/commit/374dadba4e5dcf4b76b0df912fed15f567a9e916))
+* **deps:** update module github.com/go-jose/go-jose/v4 to v4.1.8 ([#58](https://github.com/roguekeyboards/oidc-testkit/issues/58)) ([2b74ba7](https://github.com/roguekeyboards/oidc-testkit/commit/2b74ba7ed6be1b4d629d2976ab34869cffcf43e1))
+* **deps:** update module github.com/go-jose/go-jose/v4 to v4.1.9 ([#60](https://github.com/roguekeyboards/oidc-testkit/issues/60)) ([59f3fea](https://github.com/roguekeyboards/oidc-testkit/commit/59f3fea7d0c95c7d8f5b16cdf0a1a485e3428ba6))
+
 ## [1.0.5](https://github.com/roguekeyboards/oidc-testkit/compare/v1.0.4...v1.0.5) (2026-11-01)
 
 
